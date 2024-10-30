@@ -1,0 +1,19 @@
+.firstElement
+{
+    background-color: black;
+    color: white;
+    border-style: outset;
+}
+.secondElement
+{
+    background-color: yellow;
+    
+}
+
+button
+{
+    font-size: 28px;
+    font-family: Helvetica, "sans-serif",'Times New Roman', Times, serif ;
+    border-width: 3px;
+    border-style: outset;
+}
