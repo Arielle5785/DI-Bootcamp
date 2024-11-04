@@ -130,43 +130,36 @@
 #         tickets +=price
 #         print(f'Ticket price added: {price} USD. Current ticket prices: {tickets}')
 
-#Exercice 9B: TO THE TA, please explain how to concatenate or to imbracate a "keepAsking" on what question that initiates the stop on the second one.
-# list = []
-# keep_asking = True
-
-
-# while keep_asking:
-#     q1 =  input ('Enter the name of the person attending this movie. Pay the permitted age is between 16 & 21. To exit the ist of attendees, type "exit": ') 
-#     q2 = input ('what is your age? Type "exit" if you have finished with the last question ')
-
-#     if q1 == 'exit' :
-#         keep_asking = False
-        
-#         print(f' here is the list of people who can see the movie:{list}')
-
+#Exercice 9B: TO THE TA, can we make a keep asking dependent from the result of another one?
+# list = ['Jacqueline','Francis','Dima','Harry','Hermione']
+# allowed_list =[]
+# for name in list:
+#     age = int(input(f'How old are you, {name}? '))
+#     if 16 < age < 21:
+#         allowed_list.append(name)
+#         print(f'{name} you have the required age.')
 #     else:
-#         q3=int(q2)
-#         if q3 < 16 or  q3 > 21:
-#             continue
-#         else:
-#             list.append(q1)
+#         list.remove(name)
+#         print(f'Sorry,{name}, you don\'t have the required age.')
+
+# print (f'Here is the list of the happy attendees: ', allowed_list)
             
 # Exercise 10 
 
-sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich", "Egg sandwich", "Chicken sandwich", "Pastrami sandwich"]
-out_of_stock = 'Pastrami sandwich'
-one_message = False
-while out_of_stock in sandwich_orders:
-    sandwich_orders.remove(out_of_stock)
-    if not one_message:
-        print(f"Our {out_of_stock} is out of stock, so we have removed it from the order.")
-        one_message = True
+# sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich", "Egg sandwich", "Chicken sandwich", "Pastrami sandwich"]
+# out_of_stock = 'Pastrami sandwich'
+# one_message = False
+# while out_of_stock in sandwich_orders:
+#     sandwich_orders.remove(out_of_stock)
+#     if not one_message:
+#         print(f"Our {out_of_stock} is out of stock, so we have removed it from the order.")
+#         one_message = True
     
     
-finished_sandwiches =[]
-while sandwich_orders:
-    sandwich = sandwich_orders.pop(0)  
-    print(f"I made your {sandwich}.")
-    finished_sandwiches.append(sandwich)
+# finished_sandwiches =[]
+# while sandwich_orders:
+#     sandwich = sandwich_orders.pop(0)  
+#     print(f"I made your {sandwich}.")
+#     finished_sandwiches.append(sandwich)
     
         
