@@ -20,5 +20,9 @@ age = int(input ("How old are you?"))
 if age >18  and age < 35:
     print('You can enter the club')
 elif age < 18 and age >12:
+<<<<<<< HEAD
+=======
+    print('You are a teenager')
+>>>>>>> 75404dcb8e1eee85e627b22aed6f6ae76705edb4
 else:
     print ('You are an adult')

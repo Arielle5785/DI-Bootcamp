@@ -1,4 +1,4 @@
-list1 = [5,10,15,20,25,50,20]
+# list1 = [5,10,15,20,25,50,20]
 # print(list1.index(20))
 # list1[3]= 200
 # print(list1)
@@ -12,26 +12,53 @@ list1 = [5,10,15,20,25,50,20]
 
 #SETS: unordered and doesn't accept multiple occurences
 
-set1 = {'Juliana'}
+# set1 = {'Juliana'}
 # set1 = set ()
 
-set1.add('Rick')
-set1.add('Morty')
-set1.add('Rick')
+# set1.add('Rick')
+# set1.add('Morty')
+# set1.add('Rick')
 
-print(set1)
+# print(set1)
 
-set2 = {'Harry', 'Ron', 'Morty'}
+# set2 = {'Harry', 'Ron', 'Morty'}
 
-set3 = set1.intersection(set2)
-print(set3) 
+# set3 = set1.intersection(set2)
+# print(set3) 
 
-set4 = set1.union(set2)
-print(set4)
+# set4 = set1.union(set2)
+# print(set4)
 
-names = ['Harry', 'Leah','Luke', 'Chubaca', 'Harry']
-names_set = set(names)
-#print (names_set) # take out the the second Harry, however, it mixes the order
-names_list= list(names_set)
-print(names_list)
+# names = ['Harry', 'Leah','Luke', 'Chubaca', 'Harry']
+# names_set = set(names)
+# #print (names_set) # take out the the second Harry, however, it mixes the order
+# names_list= list(names_set)
+# print(names_list)
 
+
+# my_nums=[3,5,7,8,10]
+# print(sum(my_nums))
+
+# output = 0
+# for i in range(len(my_nums)):
+#    output += my_nums[i+1]
+#    print(output)
+
+
+#while loop
+# i=0
+# while i < 10:
+#     print (f'Hi{i}')
+#     i += 1
+
+family = []
+keep_asking = True
+
+while keep_asking:
+    members = input ('write the family member name, press "q" to finish ')
+    if members =='q':
+        keep_asking = False
+    else:
+        family.append(members)
+
+print(family)
