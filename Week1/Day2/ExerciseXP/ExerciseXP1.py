@@ -132,28 +132,24 @@
 
 #Exercice 9B
 list = []
-keep_asking_q1 = True
-keep_asking_q2 = True
+keep_asking = True
+
 
 while keep_asking:
     q1 =  input ('Enter the name of the person attending this movie. Pay the permitted age is between 16 & 21. To exit the ist of attendees, type "exit": ') 
-    q2 = int(input ('what is your age?'))
+    q2 = input ('what is your age? Type "exit" if you have finished with the last question ')
 
     if q1 == 'exit' :
-        keep_asking_q1 = False
-        keep_asking_q2 = False
+        keep_asking = False
+        
         print(f' here is the list of people who can see the movie:{list}')
 
     else:
-        list.append(q1)
-        if q2 < 16:
-            list.remove(q1)
-        elif q2 in (16,21):
-            list.append(q1)
-        elif q2 >21:
-            list.remove(q1)
+        q3=int(q2)
+        if q3 < 16 or  q3 > 21:
+            continue
         else:
-            print('invalid age.')
+            list.append(q1)
             
     
         
