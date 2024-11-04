@@ -104,32 +104,56 @@
 
 
 # Exercise 9 16:40
-tickets = []
-keep_asking = True
+# tickets = 0
+# total = 0
+# keep_asking = True
+
+# while keep_asking:
+#     question =  input ('what is the age of that person? . Type "quit" to exit.') 
+   
+#     if question =='quit':
+#         keep_asking = False
+#         total +=tickets
+        
+#         print(f'here is the total: {tickets} USD')
+#     else:
+#         qn = int(question)
+#         if qn < 3:
+#             price = 0
+#         elif 3<= qn <=12:
+#             price = 10
+#         elif qn > 12:
+#             price = 15
+#         else:
+#             print('Invalid entry. Only full years.')
+        
+#         tickets +=price
+#         print(f'Ticket price added: {price} USD. Current ticket prices: {tickets}')
+
+#Exercice 9B
+list = []
+keep_asking_q1 = True
+keep_asking_q2 = True
 
 while keep_asking:
-    question =  input ('what is the age of that person? . Type "quit" to exit. ') 
-   
-    if question =='quit':
-        keep_asking = False
-        total = sum(tickets)
-        
-        print(f'here is the total: {tickets} USD')
+    q1 =  input ('Enter the name of the person attending this movie. Pay the permitted age is between 16 & 21. To exit the ist of attendees, type "exit": ') 
+    q2 = int(input ('what is your age?'))
+
+    if q1 == 'exit' :
+        keep_asking_q1 = False
+        keep_asking_q2 = False
+        print(f' here is the list of people who can see the movie:{list}')
+
     else:
-        qn = int(question)
-        if
-        qn < 3
-        price = 0
-        
-        elif
-        qn in (3,12)
-        price = 10
-        
-        elif 
-        qn > 12
-        price = 15
-        
-        tickets.append(price)  
-        print(f'Ticket price added: {price} USD. Current ticket prices: {tickets}')
+        list.append(q1)
+        if q2 < 16:
+            list.remove(q1)
+        elif q2 in (16,21):
+            list.append(q1)
+        elif q2 >21:
+            list.remove(q1)
+        else:
+            print('invalid age.')
+            
     
         
