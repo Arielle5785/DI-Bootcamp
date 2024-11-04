@@ -1,0 +1,37 @@
+list1 = [5,10,15,20,25,50,20]
+# print(list1.index(20))
+# list1[3]= 200
+# print(list1)
+
+#correction:
+# if list1.index(20):
+# list1[list1.index(20)] = 200
+
+# else:
+#     print('the number 20 s not in the list')
+
+#SETS: unordered and doesn't accept multiple occurences
+
+set1 = {'Juliana'}
+# set1 = set ()
+
+set1.add('Rick')
+set1.add('Morty')
+set1.add('Rick')
+
+print(set1)
+
+set2 = {'Harry', 'Ron', 'Morty'}
+
+set3 = set1.intersection(set2)
+print(set3) 
+
+set4 = set1.union(set2)
+print(set4)
+
+names = ['Harry', 'Leah','Luke', 'Chubaca', 'Harry']
+names_set = set(names)
+#print (names_set) # take out the the second Harry, however, it mixes the order
+names_list= list(names_set)
+print(names_list)
+
