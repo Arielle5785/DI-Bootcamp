@@ -136,6 +136,37 @@
 # print(f'Number of stores:', merged_dict['number_stores'])
 # #the number of stores from the first dictionary (no duplicated keys) has been overwritten by the nuber of stores from the more_on_zara. In reality, the data manager should tell whether the number is to be added or updated.
 
+#Exercise 4
+users = ["Mickey","Minnie","Donald","Ariel","Pluto"]
+#1/>>> print(disney_users_A)
+# {"Mickey": 0, "Minnie": 1, "Donald": 2, "Ariel": 3, "Pluto": 4}
+# disney_users_A = {user: index for index, user in enumerate(users)}
+# print(disney_users_A)
+
+#2/>>> print(disney_users_B)
+# {0: "Mickey",1: "Minnie", 2: "Donald", 3: "Ariel", 4: "Pluto"}
+# index = 0
+# disney_users_B = {index: user for index, user in enumerate(users)}
+# print(disney_users_B)
+
+#3/ >>> print(disney_users_C)
+# {"Ariel": 0, "Donald": 1, "Mickey": 2, "Minnie": 3, "Pluto": 4}
+#sort alphabetically the users list
+# users.sort()
+# #copy the disney_users_A
+# disney_users = {user: index for index, user in enumerate(users)}
+# print(disney_users)
+
+# 4. Only recreate the 1st result for:
+# A. The characters, which names contain the letter “i”.
+# disney_users_C = {user: index for index, user in enumerate(users) if 'i' in user}
+# print(disney_users_C)
+# B. The characters, which names start with the letter “m” or “p”.
+users = ["Mickey","Minnie","Donald","Ariel","Pluto"]
+disney_users_D = {user: index for index, user in enumerate(users) if user.lower().startswith(('m','p'))}
+print(disney_users_D)
+
+
 
 
 
