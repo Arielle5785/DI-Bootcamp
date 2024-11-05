@@ -42,6 +42,19 @@
 
 # print(list_num)
 
+# # my_list = list(range(3,10))
+# # float_list = []
+# #
+# # seq = []
+# for i in range(1,6):
+#     decimal = 1+0.5
+#     seq.append(i)
+#     seq.append(decimal)
+# print(seq[1:-1])
+# print(type(seq[0]))
+
+
+
 # Exercise 5 15:03
 
 # for n in range (1,21):

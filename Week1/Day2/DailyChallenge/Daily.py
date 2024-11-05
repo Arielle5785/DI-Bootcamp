@@ -6,13 +6,13 @@
 # print(list_nl)
 
 #challenge 2
-user_word = input('Enter a word with repeating characters. e.g. cccccaaarrrbbonnnnn: ').lower()
-new_user_word= ''
-previous_letter=''
+# user_word = input('Enter a word with repeating characters. e.g. cccccaaarrrbbonnnnn: ').lower()
+# new_user_word= ''
+# previous_letter=''
 
-for letter in user_word:
-    if letter != previous_letter:
-        new_user_word += letter
-        previous_letter = letter
-print(new_user_word)
+# for letter in user_word:
+#     if letter != previous_letter:
+#         new_user_word += letter
+#         previous_letter = letter
+# print(new_user_word)
 
