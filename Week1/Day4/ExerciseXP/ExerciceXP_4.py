@@ -26,6 +26,7 @@
 # describe_city()    #no need to call the print function
 
 #Random
+
 # def game1(*args):
 #     '''
 #         Info: ask for a number between 1 and 100.
@@ -33,7 +34,7 @@
 #         If the number generated and the number entered are the same: display a success message, otherwise, it is a fail message.
 #     '''
 #     user_number = int(input('enter a number between 1 and 100: '))
-#     import random
+    # import random
 #     gen_number = random.randint(1,100)
 #     print(f' random number is {gen_number}')
 #     if user_number == gen_number:
@@ -69,3 +70,69 @@
 #         print(i)
 # show_magician()
 
+#Exercise 7
+# 1.
+# import random
+# def get_random_temp():
+#     degree = random.randint(-10,40)
+#     print(f'The temperature right now is {degree}°C.')
+
+# get_random_temp()
+
+# 2.
+# def main():
+#     degree = get_random_temp()
+#     print(f'The temperature right now is {degree}°C.')
+
+# main()
+#3.
+# def main(temp=0,message='',limits=0):
+#     temp = random.randint(-10,40)
+#     limits = [-40,0,16,23,24,32,40]
+#     message = ['Brrr, that\’s freezing! Wear some extra layers today',
+#                'Quite chilly! Don\’t forget your coat',
+#                'spring is in the air!',
+#                'T-shirts, bikinis and cocktails time!',
+#                'Hot. You are a fried egg if you stay too long on the sun!']
+#     if temp <limits[0]:
+#             print(message[0])
+#     elif temp <limits[1]:
+#         print(message[1])
+#     elif temp <limits[2]:
+#         print(message[2])
+#     elif temp <limits[3]:
+#         print(message[3])    
+#     elif temp <limits[4]:
+#         print(message[4]) 
+#     elif temp <limits[5]:
+#         print(message[5])        
+#     else:
+#             print('invalid temperatures, you are not in earth')
+            
+# main()
+        
+#4.
+import random
+def get_random_temp(degree, season):
+    degree = 0
+    if season == 'winter':
+        degree = random.randint(-10,5)
+        print(f'The temperature right now is {degree}°C; you are in {season}.')
+    elif season == 'spring':
+        degree = random.randint(5,15)
+        print(f'The temperature right now is {degree}°C; you are in {season}.')
+    elif season == 'summer':
+        degree = random.randint(16,35)
+        print(f'The temperature right now is {degree}°C; you are in {season}.')
+    elif season == 'autumn':
+        degree = random.randint(20,25)
+        print(f'The temperature right now is {degree}°C; you are in {season}.')                    
+    else:
+        print('invalid')
+
+get_random_temp()
+
+
+
+
+    
