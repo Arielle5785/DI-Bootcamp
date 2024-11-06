@@ -111,26 +111,77 @@
             
 # main()
         
-#4.
-import random
-def get_random_temp(degree, season):
-    degree = 0
-    if season == 'winter':
-        degree = random.randint(-10,5)
-        print(f'The temperature right now is {degree}°C; you are in {season}.')
-    elif season == 'spring':
-        degree = random.randint(5,15)
-        print(f'The temperature right now is {degree}°C; you are in {season}.')
-    elif season == 'summer':
-        degree = random.randint(16,35)
-        print(f'The temperature right now is {degree}°C; you are in {season}.')
-    elif season == 'autumn':
-        degree = random.randint(20,25)
-        print(f'The temperature right now is {degree}°C; you are in {season}.')                    
-    else:
-        print('invalid')
+# #4.
+# import random
+# def get_random_temp(degree, season):
+#     season = input('Enter the season: winter, autumn, spring, or summer: ')
+#     degree = 0
+#     if season == 'winter':
+#         degree = random.randint(-10,5)
+#         print(f'The temperature right now is {degree}°C; you are in {season}.')
+#     elif season == 'spring':
+#         degree = random.randint(5,15)
+#         print(f'The temperature right now is {degree}°C; you are in {season}.')
+#     elif season == 'summer':
+#         degree = random.randint(16,35)
+#         print(f'The temperature right now is {degree}°C; you are in {season}.')
+#     elif season == 'autumn':
+#         degree = random.randint(20,25)
+#         print(f'The temperature right now is {degree}°C; you are in {season}.')                    
+#     else:
+#         print('invalid')
+    
+# get_random_temp()
 
-get_random_temp()
+#5. Bonus
+# import random
+# def get_random_temp(*args):
+#     season = input('Enter the season: winter, autumn, spring, or summer: ')
+#     degree = 0
+#     if season == 'winter':
+#         degree = float(random.randint(-10,5))
+#         print(f'The temperature right now is {degree}°C; you are in {season}.')
+#     elif season == 'spring':
+#         degree = float(random.randint(5,15))
+#         print(f'The temperature right now is {degree}°C; you are in {season}.')
+#     elif season == 'summer':
+#         degree = float(random.randint(16,35))
+#         print(f'The temperature right now is {degree}°C; you are in {season}.')
+#     elif season == 'autumn':
+#         degree = float(random.randint(20,25))
+#         print(f'The temperature right now is {degree}°C; you are in {season}.')                    
+#     else:
+#         print('invalid')
+    
+# get_random_temp()
+
+#6. Bonus - cannot get it
+# import random
+# def get_random_temp(*args):
+    
+#     months = ['January','February','March', 'April','May','June', 'July', 'August', 'September', 'October', 'November', 'December']
+#     degree = 0
+#     if months.index[0:2]:
+#         season = 'winter'
+#         degree = float(random.randint(-10,5))
+#         print(f'The temperature right now is {degree}°C; you are in {season}.')
+#     elif months.index[3:5]:
+#         season = 'spring'
+#         degree = float(random.randint(5,15))
+#         print(f'The temperature right now is {degree}°C; you are in {season}.')
+#     elif months.index[6:8]:
+#         season = 'summer'
+#         degree = float(random.randint(16,35))
+#         print(f'The temperature right now is {degree}°C; you are in {season}.')
+#     elif months.index[9:11]:
+#         season = 'autumn'
+#         degree = float(random.randint(20,25))
+#         print(f'The temperature right now is {degree}°C; you are in {season}.')                    
+#     else:
+#         print('invalid')
+    
+# get_random_temp('January')
+
 
 
 
