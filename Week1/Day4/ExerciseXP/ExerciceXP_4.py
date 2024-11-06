@@ -45,10 +45,27 @@
 # game1()
 
 # #Exercise 5
-def make_shirt(size='L',message='I love Python.'):
-    '''
-        Info: size and message printed on a shirt
-    '''
-    size = ['XS','S','M','L','XL']
-    message = input ('Type the message to print on your shirt: ')
-    print(f'Your {size}\'s shirt will print the following message:\n{message}')
+# def make_shirt(size='s',message='I love you.'):
+#     '''
+#         Info: size and message printed on a shirt
+#     '''
+#     print(f'Your {size.upper()}\'s shirt will print the following message:\n"{message}"')
+# make_shirt('m','love')
+
+# Bonus
+# def make_shirt(**kwargs):
+#     '''
+#         Info: size and message printed on a shirt
+#     '''
+#     size, message = kwargs.values()
+#     print(f'Your {size.upper()}\'s shirt will print the following message:\n"{message}"')
+
+# make_shirt(size ='L',  message= 'keywords arguents?')
+
+# #Exercise 6
+# def show_magician():
+#     magician_names = ['Harry Houdini', 'David Blaine', 'Criss Angel']
+#     for i in magician_names:
+#         print(i)
+# show_magician()
+
