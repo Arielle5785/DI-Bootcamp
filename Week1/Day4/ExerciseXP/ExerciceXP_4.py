@@ -182,8 +182,67 @@
     
 # get_random_temp('January')
 
-
-
-
-
+# Exercise 8
+# Create a function that asks the questions to the user, and check his answers. Track the number of correct, incorrect answers. Create a list of wrong_answers - OK
+# Create a function that informs the user of his number of correct/incorrect answers. - KO: I cannot figure out how to make the function!
+# Bonus : display to the user the questions he answered wrong, his answer, and the correct answer.
+# If he had more then 3 wrong answers, ask him to play again. OK
+def game():
+    '''
+        Info: quiz on Star Wars. It is a quizz, that stores the correct, the wrong replies and score.
+    '''
+    data = [
+    {
+        "question": "What is Baby Yoda's real name?",
+        "answer": "Grogu"
+    },
+    {
+        "question": "Where did Obi-Wan take Luke after his birth?",
+        "answer": "Tatooine"
+    },
+    {
+        "question": "What year did the first Star Wars movie come out?",
+        "answer": "1977"
+    },
+    {
+        "question": "Who built C-3PO?",
+        "answer": "Anakin Skywalker"
+    },
+    {
+        "question": "Anakin Skywalker grew up to be who?",
+        "answer": "Darth Vader"
+    },
+    {
+        "question": "What species is Chewbacca?",
+        "answer": "Wookiee"
+    }
+    ]   
     
+    correct_answers = 0
+    incorrect_answers = 0
+    wrong_answers = []  
+    
+    for item in data:
+        user_answer = input(f"{item['question']} ")
+        if user_answer.strip().lower() == item['answer'].strip().lower():
+            print("Correct!")
+            correct_answers += 1
+        else:
+            print(f"Incorrect! The correct answer is {item['answer']}.")
+            incorrect_answers += 1
+            wrong_answers.append(item['question'])
+    print(f'the Quizz is completed\nScore of the correct answers : {correct_answers}\nScore of the incorrect answers : {incorrect_answers}')
+    
+    if wrong_answers:
+        print("\nHere are the questions you got wrong:")
+        
+        for question in wrong_answers:
+            print(f"- {question}")
+        if len(wrong_answers)>3:
+                print('Game Over: Replay!')
+        else:
+                print('Come back for more.')
+                
+game()
+
+
