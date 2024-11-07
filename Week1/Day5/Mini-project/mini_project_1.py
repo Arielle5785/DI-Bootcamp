@@ -11,6 +11,7 @@ display_board =[
 def print_board():
     print('Welcome to TIC TAC TOE!\n\n\n')
     print('TIC TAC TOE\n')
+    print('By default, it is the payer X who starts.\nThe game will automatically place the X\'s and O\'s\nfollowing the position given.\nEnjoy!')
     print('***********************')
 
     for row in display_board :
@@ -57,7 +58,7 @@ def player_input(player):
     else:
         store_o.append((row_question-1,col_question-1))
 
-    
+
 
 #definie functions OK
 # print(player_input())
@@ -85,18 +86,17 @@ def check_win(store, player):
                 return True
  
 def check_tie(store, player):
-    if not check_win(store, player) :
-        filled_positions= 0
-        cell = display_board[row_question-1][col_question-1]
-        if cell != ' ':
-            filled_positions +=1
-        elif filled_positions == 9:
+    if not check_win(store, player):  
+        filled_positions = 0
+        for row in display_board:
+            for cell in row:
+                if cell != ' ':
+                    filled_positions += 1
+        if filled_positions == 9:
             print("It's a tie!")
             return True
-        return False
+    return False
 
-
-# Main game function
 def game():
     while True:
         player_input('X')
