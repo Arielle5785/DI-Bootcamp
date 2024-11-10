@@ -26,12 +26,12 @@ class Farm:
     def get_animal_types(self):
         sorted(self.animals.keys())
 
-    def get_short_info(self):
-        animal_types = self.animals.get_animal_types()
-        if self.count in self.animals > 1:
-            return (f'{animal}s')
-        else:
-            return self
+    # def get_short_info(self): #incorrect. TA to help. please
+    #     animal_types = self.animals.get_animal_types()
+    #     if self.count in self.animals > 1:
+    #         return (f'{animal}s')
+    #     else:
+    #         return self
 
 
 # Creating an instance of the Farm class and adding animals
@@ -46,5 +46,5 @@ macdonald.get_info()
 # challenge2
 macdonald.get_animal_types()
 print(macdonald.animals)
-macdonald.get_short_info()
-print(macdonald.animals)
+# macdonald.get_short_info() #incorrect
+# print(macdonald.animals) #incorrect

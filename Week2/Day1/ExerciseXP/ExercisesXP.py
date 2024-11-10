@@ -139,7 +139,7 @@ class Zoo:
 
     def sort_animals(self):
         sorted_list = self.animals.sort()
-        dict_animals = {}
+        dict_animals = {}  # TA to get the building of a dynamic dictionary
         for word in sorted_list:
             first_letter = word[0]
             if first_letter in dict_animals(first_letter):
