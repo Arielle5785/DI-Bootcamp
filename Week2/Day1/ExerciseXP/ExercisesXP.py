@@ -133,33 +133,51 @@ class Zoo:
             self.animals.remove(animal_sold)
         else:
             print('you cannot remove an animal that is not listed.')
+
 # Create a method called sort_animals that sorts the animals alphabetically and groups them together based on their first letter.
+    sorted_list = []
 
     def sort_animals(self):
-        
-        print(self.animals)
-    pass
+        sorted_list = self.animals.sort()
+        dict_animals = {}
+        for word in sorted_list:
+            first_letter = word[0]
+            if first_letter in dict_animals(first_letter):
+                dict_animals.update(word)
+            else:
+            dict_animals.update(first_letter)
+            dict_animals.update(word)
+
+        return self
+
 
 # Example
 # zoo_1 = Zoo(['Baboon','Cat','Ape','Eel','Bear','Cougar','Emu'])
 # zoo_1.add_animal()
-zoo1 = Zoo('Bruxells Zoo')
+zoo1 = Zoo('Bruxelles Zoo')
 zoo1.add_animal('Ape')
 # print(zoo1.animals)
 zoo1.add_animal('Cat')
 zoo1.add_animal('Eel')
 zoo1.add_animal('Baboon')
-print(zoo1.animals)
+# print(zoo1.animals)
 zoo1.get_animals()
 zoo1.sell_animal('Ape')
+# print(zoo1.animals)
+zoo1.add_animal('Faon')
+zoo1.add_animal('Giraffe')
+zoo1.add_animal('Bear')
+zoo1.add_animal('Cougar')
+zoo1.add_animal('Lion')
+zoo1.add_animal('Heron')
+zoo1.add_animal('Leopard')
+zoo1.add_animal('Elephant')
 print(zoo1.animals)
-# {
-#     1: "Ape",
-#     2: ["Baboon", "Bear"],
-#     3: ['Cat', 'Cougar'],
-#     4: ['Eel', 'Emu']
-# }
-
+zoo1.sort_animals()
+print(zoo1.animals)
+# zoo1.sort_animals()
+# print(zoo1.animals)
+#
 
 # Create a method called get_groups that prints the animal/animals inside each group.
 
