@@ -1,3 +1,7 @@
+#to attention TA: Exercise 3 in a separate file
+# 4 & 5 too
+
+
 # # Exercise1:Pets
 # class Pets():
 #     def __init__(self, owner, animals):

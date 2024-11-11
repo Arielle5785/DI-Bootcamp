@@ -113,13 +113,10 @@ class Zoo:
 # Create a method called add_animal that takes one parameter new_animal. This method adds the new_animal to the animals list as long as it isn’t already in the list.
 
     def add_animal(self, animal):
-        # for animal in self.animals:
-        #     animal = input('add animal: ')
             if animal not in self.animals:
                 self.animals.append()
             else:
                 print('the animal is already listed.')
-        # self.animals.append(animal)
         return self
 # Create a method called get_animals that prints all the animals of the zoo.
 
@@ -135,20 +132,25 @@ class Zoo:
             print('you cannot remove an animal that is not listed.')
 
 # Create a method called sort_animals that sorts the animals alphabetically and groups them together based on their first letter.
-    sorted_list = []
-
-    def sort_animals(self):
-        sorted_list = self.animals.sort()
-        dict_animals = {}  # TA to get the building of a dynamic dictionary
-        for word in sorted_list:
-            first_letter = word[0]
-            if first_letter in dict_animals(first_letter):
-                dict_animals.update(word)
+    def sort_animals (self):
+        sorted_animals_letter = {}
+        sorted_animals_number = {}
+        lower_animals = [animal.lower() for animal in self.animals]
+        for animal in lower_animals :
+            if animal[0] in sorted_animals_letter :
+                sorted_animals_letter[animal[0]].append (animal)
+            else :
+                sorted_animals_letter[animal[0]] = [animal]
+            #sorted_animals_letter={'a': ['ape'], 'b': ['baboon', 'bear'], 'c': ['cat', 'cougar'], 'e': ['eel', 'emu']}
+            #enumerate(sorted_animals_letter) ={0: 'a', 1: 'b', 2: 'c', 3: 'e'}
+        for index, letter in enumerate(sorted_animals_letter):
+            if len(sorted_animals_letter[letter]) == 1 :
+                sorted_animals_number[index+1] = ''.join(sorted_animals_letter[letter])
             else:
-            dict_animals.update(first_letter)
-            dict_animals.update(word)
-
-        return self
+                sorted_animals_number[index+1] = sorted(sorted_animals_letter[letter])
+        print(sorted_animals_letter)
+        #sorted_animals_number={1: 'ape', 2: ['baboon', 'bear'], 3: ['cat', 'cougar'], 4: ['eel', 'emu']}
+        return sorted_animals_number
 
 
 # Example
