@@ -115,11 +115,11 @@ class Zoo:
     def add_animal(self, animal):
         # for animal in self.animals:
         #     animal = input('add animal: ')
-        #     if animal not in self.animals:
-        #         self.animals.append()
-        #     else:
-        #         print('the animal is already listed.')
-        self.animals.append(animal)
+            if animal not in self.animals:
+                self.animals.append()
+            else:
+                print('the animal is already listed.')
+        # self.animals.append(animal)
         return self
 # Create a method called get_animals that prints all the animals of the zoo.
 
