@@ -18,8 +18,8 @@ class Family():
     def family_presentation(self):
         print(f'Family {self.last_name}:')
         for member in self.members:
-            print(f'Name: {member['name']}, Age: {member['age']}, Gender: {
-                  member['gender']}, Is Child: {member['is_child']}')
+            print(f'''Name: {member['name']}, Age: {member['age']}, Gender: {
+                  member['gender']}, Is Child: {member['is_child']}''')
 
 
 family_1 = Family([
@@ -39,7 +39,7 @@ class TheIncredibles(Family):
         self.power = power
         self.incredible_name = incredible_name
 
-    def user_power(self):
+    def user_power(self, member_name):
         for member in self.members:
             if member['name'] == member_name:
                 if member['age'] >= 18:
