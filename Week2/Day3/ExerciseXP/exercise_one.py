@@ -19,14 +19,14 @@ from faker import Faker
 
 # Exercise 5
 # def from_now_to_jan():
-# x = datetime.datetime.now() #2024-11-12 16:28:47.375044
-# next_year = int(x.strftime('%Y')) + 1
-# new_year = datetime.datetime(next_year, 1, 1)
-# time_left = new_year - x  # 49 days, 7:04:39.339714
+#   x = datetime.datetime.now() #2024-11-12 16:28:47.375044
+#   next_year = int(x.strftime('%Y')) + 1
+#   new_year = datetime.datetime(next_year, 1, 1)
+#   time_left = new_year - x  # 49 days, 7:04:39.339714
 
-# days = time_left.days
-# hours, remainder = divmod(time_left.seconds, 3600)
-# minutes, seconds = divmod(remainder, 60)
+#   days = time_left.days
+#   hours, remainder = divmod(time_left.seconds, 3600)
+#   minutes, seconds = divmod(remainder, 60)
 
 # print(f"{days} days, {hours:02}:{minutes:02}:{seconds:02}")
 
@@ -62,7 +62,11 @@ def add_user():
     users.append(user_data)
 
 
-add_user()
-add_user()
+# add_user()
+# add_user()
 
-print(users)
+# print(users)
+
+# print(help(datetime))
+# print(dir(datetime))
+
