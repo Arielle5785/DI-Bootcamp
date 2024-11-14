@@ -5,13 +5,13 @@ import random
 import itertools
 
 class AnagramChecker:
-    def __init__(self, glossary):
-        with open('C:\\Users\\hello\\Documents\\DI-Bootcamp\\Week2\\Day5\\glossary.txt', 'r+', encoding='utf-8') as file:
-            self.glossary = list(map(str.strip,file.readlines()))
+    def __init__(self):
+        with open('C:\\Users\\hello\\Documents\\DI-Bootcamp\\Week2\\Day5\\MiniProject_Angram\\glossary.txt', 'r+', encoding='utf-8') as file:
+            self.glossary = file.read().split()
         
 #function or method that verifies wether the word is valid or not.
     def is_valid_word(self, word):
-        if word.lower() in map(str.lower, self.glossary):
+        if word.upper() in self.glossary:
             # print(f'{word} is a valid word.')
             return True
         else:
@@ -23,26 +23,23 @@ class AnagramChecker:
     def get_anagrams(self, word):
         if not self.is_valid_word(word):
             print('Invalid word provided')
-            return[]
-        word = word.lower()
-        anagrams = set(''.join(p) for p in itertools.permutations(word) if ''.join(p).lower() != word)
-        valid_anagrams = [anagram for anagram in anagrams if self.is_valid_word(anagram)]
-
-        print(f'Valid anagrams of {word} are  {valid_anagrams}')
-        return valid_anagrams
-
-
-
-    def is_anagram(self, word1, word2):
-        return sorted(word1.lower()) == sorted(word2.lower())
-
-
-anagram_checker = AnagramChecker('C:\\Users\\hello\\Documents\\DI-Bootcamp\\Week2\\Day5\\glossary.txt')
+        else:
+            list_a = []
+            list_b = []
+            for p in itertools.permutations(word):
+               list_a.append(''.join(p))
+            for perm in list_a:
+               if self.is_valid_word(perm):
+                   list_b.append(perm)
+            list_b.remove(word)
+        return list_b
+anagram_checker = AnagramChecker()
 # word = input('Enter an english word, we\'ll check wether it is valid or not: ')
-word = 'la'
+word = 'silent'
 word2 = 'tree'
 word3 = 'GINGER'
 # anagram_checker.is_valid_word(word1)
 # anagram_checker.is_valid_word(word2)
 # anagram_checker.is_valid_word(word3)
-anagram_checker.get_anagrams(word)
+print(anagram_checker.get_anagrams(word))
+
