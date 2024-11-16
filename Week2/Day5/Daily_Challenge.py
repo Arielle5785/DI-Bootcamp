@@ -31,6 +31,6 @@ def measure_load_time(url):
 
 # Test the function with multiple websites
 urls = ["https://www.google.com",
-        "https://www.ynet.co.il", "https://www.imdb.com"]
+        "https://www.ynet.co.il", "https://www.imdb.com/"]
 for url in urls:
     print(f"Loading {url} took {measure_load_time(url)} seconds")
