@@ -1,21 +1,14 @@
-from game import Game
-
-# this should display a simple menu, get the user’s choice (with data validation), and return the choice.
-# No looping should occur here. !!!! no class is required.
-# The possibles choices are: Play a new game or Show scores or Quit
-
-
 def get_user_menu_choice():
     print("\nMenu:")
-    print("(g) Play a new game")
-    print("(x) Show scores & quit")
+    print("1. Play a new game")
+    print("2. Show scores")
+    print("q. Quit")
 
-    choice = input(
-        "Enter your choice play a new (g)ame or e(x)it: ").strip().lower()
-    if choice in ['g', 'x']:
+    choice = input("Enter your choice: ").lower()
+    if choice in ['1', '2', 'q']:
         return choice
     else:
-        print("Invalid choice. Please type g or x. Try again.")
+        print("Invalid choice. Please enter 1, 2, or 'q'.")
         return get_user_menu_choice()
 
 
@@ -32,16 +25,22 @@ def main():
 
     while True:
         choice = get_user_menu_choice()
-        if choice == 'g':
+
+        if choice == '1':
             # Play a new game
             game = Game()
             result = game.play()
+            # Update results
             results[result] += 1
-        elif choice == 'x':
-            print('You quit the game.')
+        elif choice == '2':
+            # Show current scores
+            print_results(results)
+        elif choice == 'q':
+            # Quit and print final results
             print_results(results)
             break
 
 
+# Run the main function
 if __name__ == "__main__":
     main()
