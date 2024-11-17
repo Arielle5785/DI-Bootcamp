@@ -2,8 +2,8 @@
 
 from anagram_checker import AnagramChecker
 class Menu:
-        def __init__(self):
-            pass
+        # def __init__(self):
+        #     pass
 
         def menu_select(self):
             keep_asking =True

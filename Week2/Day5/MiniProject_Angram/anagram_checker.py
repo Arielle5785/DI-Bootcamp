@@ -35,7 +35,7 @@ class AnagramChecker:
         return list_b
 anagram_checker = AnagramChecker()
 # word = input('Enter an english word, we\'ll check wether it is valid or not: ')
-word = 'silent'
+word = 'meat'
 word2 = 'tree'
 word3 = 'GINGER'
 # anagram_checker.is_valid_word(word1)

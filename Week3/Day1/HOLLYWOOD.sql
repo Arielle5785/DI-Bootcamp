@@ -1,0 +1,22 @@
+-- INSERT INTO actors (first_name, last_name, age, number_oscars)
+-- VALUES ('Matt', 'Damon', '08-10-1970', 5)
+-- SHOW Datestyle
+-- INSERT INTO actors (first_name, last_name, age, number_oscars)
+-- VALUES ('Meryl', 'Streep', '22-06-1949', 3);
+-- VALUES ('Katherine', 'Hepburn', '12-05-1907', 4);
+-- SELECT * FROM actors
+-- INSERT INTO actors (first_name, last_name, age, number_oscars)
+-- VALUES ('Cary', 'Grant', '18-01-1904', 0), ('Jack', 'Nicholson', '22-04-1937', 3), 
+-- ('Frances', 'McDormand','23-06-1957', 3), ('Ben', 'Stiller', '30-11-1965', 0)
+
+-- SELECT first_name FROM actors WHERE last_name = 'Damon'
+-- SELECT * FROM actors WHERE last_name = 'Damon'
+-- SELECT * FROM actors WHERE number_oscars >2
+-- ORDER BY number_oscars DESC;
+-- UPDATE actors 
+-- SET first_name = 'Angelina',
+-- last_name = 'Jolie'
+-- WHERE first_name = 'Brad';
+-- SELECT * FROM actors
+-- ALTER TABLE actors RENAME number_oscars TO OSCARS;
+-- ALTER TABLE actors RENAME age TO DOB;
