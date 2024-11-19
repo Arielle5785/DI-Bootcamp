@@ -50,4 +50,29 @@
 # else:
 #     print(f'{x} is greater than {y}.')
 
-exercise 6:
+# exercise 6: For loops Print all numbers from 1 to 10
+# x=0
+# for x in range(10):
+#     x+=1
+#     print(x)
+# The following code is simplier
+# for x in range (1,11):
+#     print(x)
+
+# exercise 7: Print the multiplication table of a number entered by the user.
+
+keep_asking = True
+while keep_asking:
+    x = (input('Enter a number to get the multiplication table. Type exit, to stop the code run: '))
+    if x.isalpha():
+        print(input('You have typed no-numbers. Try again.'))
+    elif x.lower() == 'exit':
+        print(input('Goodbye, Fairwell, Auf wiederzein, Good night!'))
+        keep_asking = False
+    elif x!=0:
+        i=0
+        for i in range (1,11):
+            y=x*i
+            print(y)
+            i+=1
+
