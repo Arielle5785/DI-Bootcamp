@@ -50,4 +50,4 @@
 # else:
 #     print(f'{x} is greater than {y}.')
 
-exercise 6: 
+exercise 6:
