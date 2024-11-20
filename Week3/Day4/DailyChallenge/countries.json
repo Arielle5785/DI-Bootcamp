@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Libya",
+        "capital": "Tripoli",
+        "flag": "\ud83c\uddf1\ud83c\uddfe",
+        "subregion": "Northern Africa",
+        "population": 6871287
+    },
+    {
+        "name": "Italy",
+        "capital": "Rome",
+        "flag": "\ud83c\uddee\ud83c\uddf9",
+        "subregion": "Southern Europe",
+        "population": 59554023
+    },
+    {
+        "name": "Liechtenstein",
+        "capital": "Vaduz",
+        "flag": "\ud83c\uddf1\ud83c\uddee",
+        "subregion": "Western Europe",
+        "population": 38137
+    },
+    {
+        "name": "Cocos (Keeling) Islands",
+        "capital": "West Island",
+        "flag": "\ud83c\udde8\ud83c\udde8",
+        "subregion": "Australia and New Zealand",
+        "population": 544
+    },
+    {
+        "name": "Central African Republic",
+        "capital": "Bangui",
+        "flag": "\ud83c\udde8\ud83c\uddeb",
+        "subregion": "Middle Africa",
+        "population": 4829764
+    },
+    {
+        "name": "Nicaragua",
+        "capital": "Managua",
+        "flag": "\ud83c\uddf3\ud83c\uddee",
+        "subregion": "Central America",
+        "population": 6624554
+    },
+    {
+        "name": "Guyana",
+        "capital": "Georgetown",
+        "flag": "\ud83c\uddec\ud83c\uddfe",
+        "subregion": "South America",
+        "population": 786559
+    },
+    {
+        "name": "British Indian Ocean Territory",
+        "capital": "Diego Garcia",
+        "flag": "\ud83c\uddee\ud83c\uddf4",
+        "subregion": "Eastern Africa",
+        "population": 3000
+    },
+    {
+        "name": "Thailand",
+        "capital": "Bangkok",
+        "flag": "\ud83c\uddf9\ud83c\udded",
+        "subregion": "South-Eastern Asia",
+        "population": 69799978
+    },
+    {
+        "name": "Jamaica",
+        "capital": "Kingston",
+        "flag": "\ud83c\uddef\ud83c\uddf2",
+        "subregion": "Caribbean",
+        "population": 2961161
+    }
+]
