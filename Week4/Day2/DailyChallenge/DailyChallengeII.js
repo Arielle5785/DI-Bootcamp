@@ -1,6 +1,6 @@
 star = '*';
 let tree = '';
-for (i = 0; i < 6; i++) {
+for (i = 0; i < 7; i++) {
     tree = star.repeat(i) ;
     console.log(tree);
 }
