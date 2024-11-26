@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<html>
+
+
+<body>
+    <div id="elem" about="Elephant" style="Elephant"></div>
+
+    <script>
+        let newDiv = document.getElementById("elem")
+
+        //getAttribute('name attribute')
+        newDiv.getAttribute('about'); // return 'Elephant'
+
+        //setAttribute(name attribute, value attribute)
+        newDiv.setAttribute('style', "color:blue;");
+
+        //you get --> <div id="elem" about="Elephant" style="color:blue" ></div>
+
+        //loop through the attributes of an element
+        for (let attr of elem.attributes) { // Lists all attributes
+            alert(attr.name + '=' + attr.value);
+        }
+    </script>
+
+</body>
+
+</html>
+   <script src = functionCourse.js></script> 
+</body>
+</html>
