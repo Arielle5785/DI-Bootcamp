@@ -16,7 +16,7 @@ section.style.display = "flex";
 section.style.flexWrap = "wrap"; // Allow planets to wrap to the next line if needed
 section.style.justifyContent = "space-around"; // Distribute planets evenly
 section.style.gap = "50px"; // Add consistent spacing between planets
-section.style.maxWidth = "65%"; // Limit the width of the container
+section.style.maxWidth = "40%"; // Limit the width of the container
 section.style.margin = "0 auto"; // Center the container horizontally
 
 planets.forEach(planet => {
