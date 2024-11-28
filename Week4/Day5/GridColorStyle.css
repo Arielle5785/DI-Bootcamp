@@ -1,0 +1,35 @@
+#sidebar {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+
+	height: 90vh;
+	width: 20vw;
+	float: left;
+
+	background-color: darkgrey;
+	padding: 5px;
+}
+button {
+    grid-column: 1/4;
+    grid-gap: 5px;
+	
+    background-color: darkgrey;
+    padding: 5px;
+    text-align: center;
+	display: inline-block;
+    font-size: 22px;
+    color: aqua;
+	margin: 4px 2px;
+    border-color: aqua;
+	cursor: pointer;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1px;
+
+}
