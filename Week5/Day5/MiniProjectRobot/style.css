@@ -1,0 +1,77 @@
+ 
+ body{
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;    
+    color: #469ea4;
+ }
+ #container {
+    display:flex;
+    flex-direction: row; 
+    align-items:start;  
+    margin-top: 50px;
+    padding-left: 12px;
+    padding-bottom: 2px;
+    gap: 22px;
+    background-color: #a4466f;
+}
+
+#container2 {
+    display:flex;
+    flex-direction: row; 
+    align-items:center;  
+    margin-top: 50px;
+    padding-left: 12px;
+    padding-bottom: 2px;
+    gap: 22px;
+    background-color: #a4466f;}
+
+ #title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+    align-items: flex-end;
+    }
+
+#searchRobots {
+    width: 500px;
+    height: 20px;
+    font-size: 12px;
+    }
+ #cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.robotCard {
+    background-color: #469ea4;
+    color: #a4466f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.robotCard:hover {
+    transform: translateY(-10px);
+}
+
+.robotImage {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.robotName {
+    font-size: 1.2em;
+    margin: 10px 5px;
+    font-weight: bold;
+}
+
+.robotInfo {
+    font-size: 0.9em;
+    color: #a4466f;
+}    
