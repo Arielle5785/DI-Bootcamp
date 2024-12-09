@@ -15,5 +15,5 @@ function isAnagram(word1, word2) {
         return !differences.some(num => num!= 0)
     }
 const result1 = isAnagram('azdlowaazz', 'azdowaazze'); //true
-// console.log('result1', result1);
+console.log('result1', result1);
 

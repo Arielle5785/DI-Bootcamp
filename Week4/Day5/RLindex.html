@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Event Delegation</title>
+</head>
+
+<body>
+    <button id="add-item">Add Item</button>
+    <ul id="item-list">
+        <!-- Existing list items -->
+    </ul>
+
+    <script>
+        const itemList = document.getElementById("item-list");
+        const addItemButton = document.getElementById("add-item");
+
+        // Add event listener to the parent element
+        itemList.addEventListener("click", function (event) {
+            if (event.target.tagName === "LI") {
+                console.log("Clicked item:", event.target.textContent);
+            }
+        });
+
+        // Function to add a new item dynamically
+        function addItem() {
+            const newItem = document.createElement("li");
+            newItem.textContent = "New Item";
+            itemList.appendChild(newItem);
+        }
+
+        // Event listener for adding new item
+        addItemButton.addEventListener("click", addItem);
+    </script>
+</body>
+
+</html>

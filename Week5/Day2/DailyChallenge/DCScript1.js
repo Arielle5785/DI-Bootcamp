@@ -36,6 +36,12 @@ const gameInfo = [
 // const usernames = gameInfo.filter(player => player.score >5).forEach(player => {console.log(
 //     `${player.username}!`)
 // });
+gameInfo.forEach(player => {
+  if (player.score > 5) {
+    console.log(`${player.username}!`)
+  }
+});
+
 
 // Find and display the total score of the users. (Hint: The total score is 71)
 

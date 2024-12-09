@@ -9,7 +9,7 @@
     display:flex;
     flex-direction: row; 
     align-items:start;  
-    margin-top: 50px;
+    margin-top: 10px;
     padding-left: 12px;
     padding-bottom: 2px;
     gap: 22px;
@@ -19,24 +19,26 @@
 #container2 {
     display:flex;
     flex-direction: row; 
-    align-items:center;  
-    margin-top: 50px;
+    align-items:flex-end;  
     padding-left: 12px;
-    padding-bottom: 2px;
+    height: 80px;
     gap: 22px;
     background-color: #a4466f;}
 
- #title {
-    font-size: 22px;
+#title {
+    font-size: 52px;
     font-weight: bold;
-    margin: 20px;
-    align-items: flex-end;
+    padding:0;
+    margin: 0;
     }
 
 #searchRobots {
     width: 500px;
     height: 20px;
     font-size: 12px;
+    margin:0px;
+    padding:0px;
+    margin-bottom: 12px;
     }
  #cardsContainer {
     display: flex;

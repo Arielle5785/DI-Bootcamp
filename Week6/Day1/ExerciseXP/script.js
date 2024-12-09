@@ -76,11 +76,37 @@ const callback2 = () => {
     
 }
 job()
-// function job(callback1, callback2) {
-//     callback1();
-
-//     callback2();
-//     callback2();
-//     callback2();
+//correction from Raquel so the order is repected.
+// output expected: callBack1, callBack2, callBack2, callBack2
+// function job() {
+//     setTimeout(callback1, 2000);
+//     let counter = 0;
+//     function intervalId() {
+//         const interval = setInterval(() => {
+//             counter++
+//             if (counter >= 4) { clearInterval(interval) }
+//             else callback2()
+//         }, 1000);
+//     }
+//     setTimeout(intervalId,2100)
 // }
+// const callback1 = () => {
+//     console.log('callback1');
+// }
+// const callback2 = () => {
+//     console.log('callback2');
+// }
+// job()
+
+
+
+
+
+
+
+
+
+
+
+
 
