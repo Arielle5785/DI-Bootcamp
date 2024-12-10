@@ -1,0 +1,26 @@
+
+.ccyContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+body {
+   
+    font-family: sans-serif;
+    color: rgb(42, 4, 129);
+    font-weight: bold;
+    text-align: center;
+    background-image: url("https://cdn.britannica.com/83/189283-050-DF7E0E75/Banknotes-world.jpg?w=600&q=60");
+    z-index: 1;
+}
+
+p, h1{
+    font-family: sans-serif;
+    color:  rgb(42, 4, 129);
+    font-weight: bold;
+    text-align: center;
+    background-color: antiquewhite;
+    text-shadow: rgb(59, 143, 143);
+    z-index: 2;
+}
