@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: yellow;
+    text-align: center;
+    background-image: url("https://i.giphy.com/media/TxVVB6PfWMjE4/200.webp");
+    
+}
+.background {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;  
+    flex-direction: column ;
+    align-items: top;
+    /* transform: translateX(-50%); */
+    width: 350px;
+    height: auto;
+    margin:  0 auto;
+    margin-top: -20px;
+    z-index: 2;
+}
+
+
+.info-container {
+    border: 3px solid yellow;
+    border-radius: 15px;
+    width: 600px;
+    margin: 0 auto;
+    
+}
+
+#button {
+    margin-top: 20px;
+    border: 3px solid yellow;
+    border-radius: 10px;
+    width: 180px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: yellow;
+}
+
+h1, p {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.fa-3x {
+    margin-top: 20px;
+}
+
+.fa-spinner {
+    color: yellow;
+    display:none;
+    padding: 5px;
+
+}
