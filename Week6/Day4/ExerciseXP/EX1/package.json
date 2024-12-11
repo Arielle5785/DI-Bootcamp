@@ -1,0 +1,13 @@
+{
+  "name": "exercisexp",
+  "version": "1.0.0",
+  "main": "products.js",
+  "type":"commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Arielle Benadi",
+  "license": "ISC",
+  "description": "Common JS syntax"
+}
