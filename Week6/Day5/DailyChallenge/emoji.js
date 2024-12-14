@@ -31,9 +31,9 @@ const emojis = [
     { id: 30,pic: "🦄", name: "Unicorn Face" }
 ];
 
-module.exports = {
-    emojis
-};
+// module.exports = {
+//     emojis
+// };
 
 // console.log(emojis[2])
 
