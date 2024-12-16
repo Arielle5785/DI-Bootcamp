@@ -1,3 +1,4 @@
+
 const fromInput = document.getElementById('from');
 console.log(fromInput);
 
@@ -7,9 +8,9 @@ const convertButton = document.getElementById('convert');
 const switchButton = document.getElementById('switch');
 
 const convertCurrency = async () => {
-    let fromCCY = fromInput.value.trim().toUpperCase();
-    let toCCY = toInput.value.trim().toUpperCase();
-    let amount = amountInput.value.trim();
+    const fromCCY = fromInput.value.trim().toUpperCase();
+    const toCCY = toInput.value.trim().toUpperCase();
+    const amount = amountInput.value.trim();
 
     if (!fromCCY || !toCCY || !amount) {
         alert('Please enter valid currencies and amount.');
@@ -28,11 +29,15 @@ const convertCurrency = async () => {
         // }
         
         const data = await response.json();
-  
-        fromCCY = data.base_code;
-        toCCY = data.target_code;
-        let rate = data.conversion_rate;
-        amount = data.conversion_result;
+        console.log('data',data);
+        
+
+        fromCCY = data?.base_code;
+        console.log(fromCCY);
+        
+        // toCCY = data?.target_code;
+        // let rate = data?.conversion_rate;
+        // amount = data?.conversion_result;
         // document.getElementById('convertedAmount').append(amount)
         // const reverseAmount = 1 / data.conversion_result
         // document.getElementById('reverseAmount').append(switch)
@@ -43,9 +48,10 @@ const convertCurrency = async () => {
        
     };
 }
+convertButton.addEventListener('click', convertCurrency)
 
 // Add event listener to the button
-convertButton.addEventListener('click',convertCurrency)
+
 
     
 
