@@ -1,13 +1,10 @@
 const knex = require("knex");
 require("dotenv").config();
 
-
-
 // Do not expose your Neon credentials to the browser
 
 const { PGHOST, PGPORT, PGUSER, PGPASSWORD, PGDATABASE } = process.env;
-console.log(process.env);
- 
+
 const db = knex({
   client: "pg",
   connection: {
