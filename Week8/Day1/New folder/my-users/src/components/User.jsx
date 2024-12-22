@@ -1,5 +1,5 @@
-const favAnimals = (props) => {
-  const {  } = props.info;
+const User = (props) => {
+  const { name, email, username, id } = props.info;
   return (
     <>
       <div>
@@ -11,4 +11,4 @@ const favAnimals = (props) => {
     </>
   );
 };
-export default favAnimals;
+export default User;
