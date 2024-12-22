@@ -1,0 +1,16 @@
+const { randomBytes,pbkdf2Sync} =  require("crypto");
+
+// Creating a unique salt for a particular user
+const salt = randomBytes(128).toString('base64');
+// Hash the salt and password with 1000 iterations, 64 length and sha512 digest algorithms 
+const hash = pbkdf2Sync('abs123', salt, 1000, 64, 'sha512').toString('base64');
+
+// Store both salt and hash for the user in DB.
+console.log({salt,hash});
+
+// / To verify the same - salt (stored in DB) with same other parameters 
+// used while creating hash (1000 iterations, 64 length and sha512 digest)
+const encryptHash = pbkdf2Sync('abs123', salt, 10000, 512, 'sha512').toString('base64');
+
+// check if hash (stored in DB) and newly generated hash (newHash) are the same
+console.log(hash == encryptHash)
