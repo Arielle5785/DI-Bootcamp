@@ -1,0 +1,49 @@
+/* index.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  text-align: center;
+}
+
+.language-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.language-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffefdb;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.language-card span {
+  flex: 1;
+}
+
+.language-card button {
+  color: green;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.language-card button:hover {
+  text-decoration: underline;
+}
