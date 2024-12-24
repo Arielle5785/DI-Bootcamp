@@ -27,12 +27,16 @@ const Form = () => {
         vegan,
       },
     });
+      const url = `http://localhost:3000/?firstName=${firstName}&lastName=${lastName}&age=${age}&gender=${gender}&destination=${destination}&nutsFree=${nutsFree}&lactoseFree=${lactoseFree}&lactoseFree=${vegan}`
+      fetch(url);
+      console.log(url);
+      
   };
 
   return (
     <>
       <h2>Sample Form</h2>
-      <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
         {/* Input Fields */}
         <input type="text" placeholder="First Name" name="firstName" />
         <br />
@@ -102,7 +106,8 @@ const Form = () => {
         </div>
       )}
     </>
-  );
+    );
 };
+
 
 export default Form;
