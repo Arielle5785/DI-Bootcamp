@@ -30,6 +30,6 @@ const emojis = [
     { id: 29,pic: "🐱", name: "Cat Face" },
     { id: 30,pic: "🦄", name: "Unicorn Face" }
 ];
-module.exports = emojis;
+module.exports = {emojis};
 
 
