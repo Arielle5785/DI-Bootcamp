@@ -63,10 +63,10 @@ import './App.css'
 function App() {
   const webhook = async () => {
     const data = {
-      key1: 'myusername',
-      email: 'mymail@gmail.com',
+      key1: 'myusernames',
+      email: 'mymail@yahoo.com',
       name: 'Isaac',
-      lastname: 'Doe',
+      lastname: 'Newton',
       age: 27
     }
     try {
@@ -81,14 +81,15 @@ function App() {
     } catch (error) {
       console.log(error)
     }
+  }
     return (
       <>
         <div>
-          <button onClick={()=>webhook} >Press me to post some data</button>
+          <button onClick={()=>webhook()} >Press me to post some data</button>
         </div>
       </>
     )
-  }
+  
 } 
 
 export default App
