@@ -6,26 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="game.js" defer></script>
- 
     <title>Emoji Quiz</title>
 </head>
 
 <body>
-    <h1>Emoji Quiz</h1>
-    <p>What is the name of this emoji?</p>
-    <div id="emoji-display" style="font-size: 50px;"></div>
-
-    <form id="quiz-form">
-        <div id="options-container"></div>
-        <button type="submit">Submit</button>
-    </form>
-
+    <div id="container">
+        <form id="quiz-form" method="POST">
+            <p>What is the name of this Emoji?</p>
+            <p id="emoji-display"></p>
+            <div id="options-container"></div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     <button id="endGame">End Game</button>
-
     <div id="leaderboard">
         <h2>Leaderboard</h2>
         <p id="result"></p>
     </div>
 </body>
+
 
 </html>
