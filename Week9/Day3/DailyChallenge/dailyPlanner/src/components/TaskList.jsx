@@ -55,7 +55,8 @@ const TasksList = ({ selectedDate }) => {
                         ) : (
                             <>
                                 <span
-                                    style={{
+                                        style={{
+                                        textAlign:"justify",
                                         textDecoration: task.active ? "none" : "line-through",
                                         cursor: "pointer",
                                     }}
