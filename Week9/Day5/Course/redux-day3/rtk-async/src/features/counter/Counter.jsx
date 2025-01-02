@@ -26,7 +26,7 @@ const Counter = (props) => {
       <button onClick={() => dispatch(decrement())}> - </button>
       <button onClick={() => dispatch(reset())}> Reset </button>
       <div>
-        <button onClick={() => dispatch(delayi())}>Increment By 5 Sec</button>
+        <button onClick={() => dispatch(delayFor5Sec())}>Increment By 5 Sec</button>
       </div>
     </>
   );
