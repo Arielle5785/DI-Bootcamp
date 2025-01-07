@@ -61,6 +61,8 @@ inputF.addEventListener("input", (event: Event) => {
     console.log(value);
 })
 
+
+
     
 
 
